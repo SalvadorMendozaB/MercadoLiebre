@@ -6,8 +6,8 @@ const path = require("path");
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 
-app.listen( process.env.PORT || 3000, () => {
-  console.log("Todo se conecto bien");
+app.listen(process.env.PORT || 3000,function(){
+  console.log('Servidor funcionando');
 });
 
 app.get("/", (req, res) => {
