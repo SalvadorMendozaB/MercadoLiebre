@@ -1,0 +1,413 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: "Roboto";
+}
+/*Link de la pagina para agregar iconos: https://fontawesome.com/icons?d=gallery&m=free*/
+.main-header {
+  position: fixed;
+  background-color: #eac926;
+  width:100%;
+  padding: 15px;
+  top: 0px;
+  z-index: 100;
+}
+
+.formulario-creacion {
+  padding: 20px;
+}
+
+.control-formulario{
+  margin-bottom: 15px;
+}
+
+.control-formulario label {
+  margin-bottom: 10px;
+  font-style: italic;
+  display: block;
+}
+
+.control {
+  padding: 8px;
+  width: 100%;
+}
+
+.boton-formulario{
+  background-color: #39b54a;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+.contenedor-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 200px;
+}
+
+.copy-header {
+  font-weight: 400;
+  text-align: center;
+}
+
+.hamburguer-button {
+  color: white;
+  background-color: blue;
+  display: block;
+  padding: 15px 0;
+  border-radius: 8px;
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  padding: 5px 0;
+}
+
+.main-navbar {
+  display: none;
+}
+
+.main-header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header input, .logo {
+  width: 80%;
+}
+
+.contenedor-input {
+  display: none;
+}
+
+
+#banner {
+  width: 100%;
+}
+
+article img {
+  width: 90%;
+}
+
+main {
+  margin: auto;
+  margin-top: 235px;
+  padding: 20px;
+
+}
+
+#navbar {
+  display: none;
+}
+
+article {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: solid 1px #ebedeb;
+}
+
+article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
+article .div-detalles {
+  position: relative;
+  border: solid 1px #ebedeb;
+  padding: 15px;
+}
+
+article .div-detalles i {
+  position: absolute;
+  right: 20px ;
+  top: -20px;
+  background-color: #fff;
+  display: block;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: green;
+  text-align: center;
+  border: solid green 1px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform 450ms;
+}
+
+article .div-detalles i:hover {
+  transform: rotate(-90deg);
+}
+
+.linea-precio{
+  display: flex; 
+}
+
+/*main article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  }*/
+
+.descuento {
+  color: green;
+}
+
+.nombre {
+  color: white;
+  margin-top: 30px;
+  display: none;
+}
+
+.nombre:hover {
+  color: gray;
+}
+
+main h2 {
+  font-size: 24px;
+  color: grey;
+  text-align: center;
+  font-weight: bolder;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+footer strong {
+  font-size: 16px;
+}
+
+footer i {
+  color: blue;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main .precio {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+main p {
+  font-size: 16px;
+}
+
+footer #copyright {
+  text-align: left;
+}
+
+/* Estilos de formularios de registro y login*/
+
+.main-registro, .main-login {
+  background-color:rgb(235, 232, 232);
+}
+
+p input {
+  border: none;
+}
+
+.campo{
+  margin-bottom: 30px;
+}
+
+.titulo-campo{
+  display: block;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.check {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.check input{
+  margin-right: 10px;
+}
+
+ p .campo-texto{
+  width: 90%;
+  height: 30px;
+  margin: auto;
+}
+
+.formulario-ingreso{
+  margin: auto;
+}
+
+.boton {
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #0022AA;
+}
+
+@media (min-width: 361px) {
+  .nombre {
+    display: block;
+  }
+
+  #navbar {
+    display: block;
+  }
+
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
+@media (min-width: 481px){
+  article {
+    max-width: 45%;
+  }
+
+  #seccion-basado,#seccion-ofertas {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header input{
+    max-width: 90%;
+  }
+
+  .logo,.contenedor-input, .copy-header {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .copy-header{
+    max-width: 350px;
+    text-align: right;
+  }
+
+.hamburguer-button {
+  display: none;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navbar ul{
+  display: flex;
+}
+.main-navbar li{
+  margin: 0 10px;
+}
+
+  .nombre {
+    display: block;
+  }
+
+  article {
+    max-width: 22%;
+  }
+
+  #navbar {
+    display: block;
+  }
+
+  header input{
+    max-width: 90%;
+  }
+
+  .logo, .contenedor-input .copy-header {
+    max-width: 27%;
+  }
+
+  .contenedor-footer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .bloque-info-footer {
+    width: 25%;
+  }
+
+  .bloque-info-footer *{
+    display: block;
+  }
+
+  .bloque-info-footer i:hover {
+    color: black;
+  }
+}
+
+@media (min-width: 1200px){
+  .main-header-top-bar ,.main-navbar{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .main-header-top-bar {
+    align-items: center;
+  }
+
+  .main-navbar {
+    margin-top: 20px;
+  }
+
+  .main-navbar li{
+    margin: 0 15px;
+  }
+
+  .main-navbar a{
+    font-size: 19px;
+  }
+
+  .copy-header{
+    max-width: none;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .logo{
+    width: 150px;
+  }
+}
